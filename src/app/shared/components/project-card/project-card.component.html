@@ -1,0 +1,21 @@
+<div class="card shadow text-center default-style">
+  <div class="card-body">
+    <h5 class="card-title">{{ projectData.title }}</h5>
+    <p class="card-text text-muted">
+      {{ projectData.tech }}
+    </p>
+    <button class="btn btn-danger">View more</button>
+  </div>
+  <div class="card-footer">
+    <div class="d-flex flex-wrap justify-content-center">
+      <div
+        class="tag ms-1 mb-1"
+        *ngFor="let stack of projectData.stack"
+        [style.background-color]="stack.color"
+        [style.color]="stack.colorText"
+        >
+        {{ stack.key }}
+      </div>
+    </div>
+  </div>
+</div>
