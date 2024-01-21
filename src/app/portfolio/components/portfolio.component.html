@@ -1,9 +1,9 @@
 <div class="container">
-  <div class="row">
+  <div class="row justify-content-center ">
     <div
       class="col-lg-4 col-md-6 mb-4"
-      style="max-width: 380px; min-width: 380px"
-      *ngFor="let project of projects.projects">
+      style="max-width: 380px; width: 100%"
+      *ngFor="let project of projectsData">
       <app-project-card [projectData]="project"></app-project-card>
     </div>
   </div>

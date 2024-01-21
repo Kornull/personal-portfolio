@@ -1,18 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Projects } from 'src/app/core/models';
-import { projectsData } from 'src/app/shared/mock';
+import { ProjectInfo } from 'src/app/core/models';
+import { ProjectsService } from 'src/app/core/services';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss'],
 })
-export class PortfolioComponent {
-  projects: Projects;
+export class PortfolioComponent implements OnInit {
+  projectsData: ProjectInfo[] = [];
 
-  constructor(private titleService: Title) {
+  constructor(
+    private titleService: Title,
+    private projects: ProjectsService
+  ) {
     this.titleService.setTitle('Uladzimir K. - Portfolio');
-    this.projects = projectsData;
+  }
+
+  ngOnInit(): void {
+    this.projectsData = this.projects.getProjects();
   }
 }

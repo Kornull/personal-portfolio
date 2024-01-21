@@ -17,7 +17,7 @@ export class Tag {
 
   static RXJS = new Tag('RxJS', '#C71585', '#fff');
 
-  static NgRx = new Tag('NgRx', '#4B0082', '#fff');
+  static NGRX = new Tag('NgRx', '#4B0082', '#fff');
 
   static REDUXTOOLKIT = new Tag('Redux Toolkit', '#6A5ACD', '#fff');
 

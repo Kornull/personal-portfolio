@@ -1,15 +1,11 @@
 import { Tag } from './tags';
 
-export interface Projects {
-  projects: ProjectInfo[];
-}
-
 export interface ProjectInfo {
-  id: string;
+  id: number;
   tech: string;
   title: string;
   'full-info': string;
-  image: string;
+  image: string[];
   link: string;
   github: string;
   stack: Tag[];

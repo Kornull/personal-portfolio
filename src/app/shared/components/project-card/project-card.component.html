@@ -4,16 +4,19 @@
     <p class="card-text text-muted">
       {{ projectData.tech }}
     </p>
-    <button class="btn btn-danger">View more</button>
+    <button
+      class="btn btn-danger"
+      (click)="openProjectModal()">
+      View more
+    </button>
   </div>
   <div class="card-footer">
     <div class="d-flex flex-wrap justify-content-center">
       <div
-        class="tag ms-1 mb-1"
+        class="tag ms-1 mb-1 d-flex align-items-center"
         *ngFor="let stack of projectData.stack"
         [style.background-color]="stack.color"
-        [style.color]="stack.colorText"
-        >
+        [style.color]="stack.colorText">
         {{ stack.key }}
       </div>
     </div>
