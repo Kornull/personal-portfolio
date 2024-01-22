@@ -22,7 +22,7 @@ export class PortfolioFilterComponent {
 
   nextjs: boolean = false;
 
-  isViewFilter: boolean = false;
+  isViewFilter: boolean = true;
 
   isFiltering: boolean = true;
 
