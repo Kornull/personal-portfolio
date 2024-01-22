@@ -167,4 +167,23 @@ export class ProjectsService {
 
     return projectDetails;
   }
+
+  getProjectsByFilter(filterTags: Tag[]): ProjectInfo[] {
+    const filteredProjects: ProjectInfo[] = [];
+
+    this.projects.forEach(project => {
+      let isFound: boolean = true;
+
+      filterTags.forEach(tag => {
+        if (!project.stack.includes(tag)) {
+          isFound = false;
+        } else {
+          isFound = true;
+        }
+
+        if (isFound) filteredProjects.push(project);
+      });
+    });
+    return filteredProjects;
+  }
 }

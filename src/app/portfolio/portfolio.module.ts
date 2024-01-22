@@ -6,9 +6,10 @@ import { SharedModule } from '../shared/shared.module';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 
 import { PortfolioComponent } from './components/portfolio.component';
+import { PortfolioFilterComponent } from './components/portfolio-filter/portfolio-filter.component';
 
 @NgModule({
-  declarations: [PortfolioComponent],
+  declarations: [PortfolioComponent, PortfolioFilterComponent],
   imports: [CommonModule, SharedModule, PortfolioRoutingModule],
   exports: [PortfolioComponent],
 })

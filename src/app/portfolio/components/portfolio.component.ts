@@ -11,6 +11,8 @@ import { ProjectsService } from 'src/app/core/services';
 export class PortfolioComponent implements OnInit {
   projectsData: ProjectInfo[] = [];
 
+  isCollapse: boolean = true;
+
   constructor(
     private titleService: Title,
     private projects: ProjectsService
@@ -20,5 +22,9 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit(): void {
     this.projectsData = this.projects.getProjects();
+  }
+
+  filterCards(ev: ProjectInfo[]) {
+    this.projectsData = ev;
   }
 }

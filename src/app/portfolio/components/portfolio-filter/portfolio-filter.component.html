@@ -1,0 +1,109 @@
+<div class="mb-2">
+  <div>
+    <button
+      class="btn btn-outline-danger mb-2 me-2"
+      (click)="isViewFilter = !isViewFilter">
+      Filter
+    </button>
+
+    <button
+      class="btn btn-outline-secondary mb-2 me-2"
+      (click)="resetFilter()"
+      [hidden]="isFiltering">
+      Reset
+    </button>
+
+    <div
+      [collapse]="isViewFilter"
+      [isAnimated]="true">
+      <div
+        class="border mb-2 shadow-sm"
+        style="width: 250px">
+        <form>
+          <div class="row mx-0">
+            <div class="col">
+              <small><b>Languages:</b></small>
+              <div class="form-group">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name="Typescript"
+                    id="ts"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="ts"
+                    (change)="filter()" />
+                  <label
+                    for="ts"
+                    class="form-check-label small"
+                    >Typescript</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name="JavaScript"
+                    id="js"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="js"
+                    (change)="filter()" />
+                  <label
+                    for="js"
+                    class="form-check-label small"
+                    >JavaScript</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <small><b>Frameworks:</b></small>
+              <div class="form-group">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name="Angular"
+                    id="angular"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="angular"
+                    (change)="filter()" />
+                  <label
+                    for="angular"
+                    class="form-check-label small"
+                    >Angular</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name="React"
+                    id="react"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="react"
+                    (change)="filter()" />
+                  <label
+                    for="react"
+                    class="form-check-label small"
+                    >React</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name="NextJS"
+                    id="nextjs"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="nextjs"
+                    (change)="filter()" />
+                  <label
+                    for="nextjs"
+                    class="form-check-label small"
+                    >NextJS</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
