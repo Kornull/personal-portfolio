@@ -49,6 +49,7 @@ export class ProjectsService {
         'assets/network/net-3.png',
         'assets/network/net-4.png',
         'assets/network/net-5.png',
+        'assets/network/net-6.png',
       ],
       link: 'https://kornull-rs-network.netlify.app/',
       github: 'https://github.com/Kornull/rs-network',
