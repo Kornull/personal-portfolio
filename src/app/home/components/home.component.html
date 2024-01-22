@@ -1,14 +1,14 @@
 <div class="container">
-  <div class="row gx-5 text-center">
-    <div class="col shadow border m-1">
-      <h2>About me</h2>
+  <div class="row gx-5">
+    <div class="col shadow border m-1 d-flex flex-column align-items-center">
+      <h2 class="text-center mb-2">About me</h2>
       <img
         src="assets/default-avatar.jpg"
         alt="avatar"
-        width="226"
-        height="226"
+        width="186"
+        height="186"
         class="rounded-circle" />
-      <p class="text-start">
+      <p class="text-start mt-2 default-text-size">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, cum
         aliquid! Numquam quia inventore rerum. Voluptatibus explicabo natus
         sint. Asperiores, perferendis. Voluptatum culpa mollitia doloribus saepe
@@ -18,18 +18,28 @@
         veritatis voluptatibus saepe nobis sapiente voluptate possimus
         perferendis dicta voluptatum eligendi tenetur ad laborum vel dolor
         earum! Consequuntur iusto quidem inventore vel repellat a vero est cum
-        veritatis aspernatur aliquid commodi incidunt totam, ducimus ipsum
-        mollitia doloremque temporibus quo alias natus eum quas? Officiis cum,
-        sed quia velit quas eveniet, debitis magnam, omnis laborum autem ipsa
-        doloremque praesentium doloribus corrupti alias sequi rem? Sunt nulla
-        ipsum ipsa asperiores voluptas nostrum quis, porro possimus optio ea
-        expedita amet odio placeat dicta odit eaque eius aut libero itaque!
       </p>
     </div>
 
     <div class="col shadow border m-1">
-      <h2>Featured project</h2>
-      <h3>{{ project.title }}</h3>
+      <h2 class="text-center">Featured project</h2>
+      <h3 class="text-center">{{ project.title }}</h3>
+      <carousel>
+        <div *ngFor="let img of project.image">
+          <slide
+            ><img
+              src="{{ img }}"
+              alt="slide"
+              style="display: block; width: 100%"
+          /></slide>
+        </div>
+      </carousel>
+
+      <p class="mt-2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique,
+        assumenda.
+      </p>
+      <p class="mt-2">Visit the portfolio section to learn more</p>
     </div>
   </div>
 </div>

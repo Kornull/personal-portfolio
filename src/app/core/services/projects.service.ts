@@ -7,7 +7,7 @@ import { ProjectInfo, Tag } from '../models';
 export class ProjectsService {
   projects: ProjectInfo[] = [
     {
-      id: 0,
+      id: 1,
       tech: 'angular',
       'full-info':
         'main search form on the main page, header with the search form on the search result page, main search results page, search results page, pagination, metadata update, api calls, card component with search result data (text / links / images ), routing, loading component, no result component, error component, viewing the site with 320 pixels resolution (mobile version),',
@@ -38,7 +38,7 @@ export class ProjectsService {
       ],
     },
     {
-      id: 1,
+      id: 0,
       tech: 'amgular',
       'full-info':
         'registration, authorization, profile, localization(i18next), reusable form component, menu burger,header project styling(material Ui), application and backend deployment.',

@@ -9,6 +9,6 @@ import { ProjectModalComponent } from './components/project-modal/project-modal.
 @NgModule({
   declarations: [ProjectCardComponent, ProjectModalComponent],
   imports: [CommonModule, ModalModule.forRoot(), CarouselModule.forRoot()],
-  exports: [ProjectCardComponent],
+  exports: [ProjectCardComponent, CarouselModule],
 })
 export class SharedModule {}
