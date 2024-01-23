@@ -1,4 +1,11 @@
 .header {
+  position: relative;
   padding: 2rem 1em;
   background-color: #e9ecfe;
+}
+
+.contacts {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
 }
