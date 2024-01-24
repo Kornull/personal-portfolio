@@ -18,10 +18,6 @@ export class PortfolioFilterComponent {
 
   angular: boolean = false;
 
-  react: boolean = false;
-
-  nextjs: boolean = false;
-
   isViewFilter: boolean = true;
 
   isFiltering: boolean = true;
@@ -38,10 +34,8 @@ export class PortfolioFilterComponent {
     if (this.ts) filterTags.push(Tag.TYPESCRIPT);
     if (this.js) filterTags.push(Tag.JS);
     if (this.angular) filterTags.push(Tag.ANGULAR);
-    if (this.react) filterTags.push(Tag.REACT);
-    if (this.nextjs) filterTags.push(Tag.NEXTJS);
 
-    if (this.ts || this.js || this.react || this.angular || this.nextjs) {
+    if (this.ts || this.js || this.angular) {
       this.isFiltering = false;
     } else {
       this.isFiltering = true;
@@ -60,8 +54,6 @@ export class PortfolioFilterComponent {
     this.ts = false;
     this.js = false;
     this.angular = false;
-    this.react = false;
-    this.nextjs = false;
     this.isFiltering = true;
 
     this.tags.emit(this.projectService.getProjects());

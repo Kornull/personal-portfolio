@@ -4,10 +4,11 @@ export interface ProjectInfo {
   id: number;
   tech: string;
   title: string;
-  'full-info': string;
+  info: string;
   image: string[];
   link: string;
   github: string;
   stack: Tag[];
   'full-stack': string[];
+  warn?: string;
 }

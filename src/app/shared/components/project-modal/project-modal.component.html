@@ -19,11 +19,34 @@
   </carousel>
 
   <h3 class="mt-2">Description</h3>
-  <p>{{ project['full-info'] }}</p>
-  <p>You can find this project on <a href="{{ project.github }}" target="_blank">Github</a></p>
-  <p>You can view this project <a href="{{ project.link }}" target="_blank">Here</a></p>
+  <p>{{ project.info }}</p>
+  <h5 *ngIf="project.warn" class="fw-bold text-danger">{{ project.warn }}</h5>
+  <h5 class="mt-2">Stack:</h5>
+  <ul>
+    <li
+      class=""
+      *ngFor="let stack of project['full-stack']">
+      {{ stack }}
+    </li>
+  </ul>
+  <p>
+    You can find this project on
+    <a
+      href="{{ project.github }}"
+      target="_blank"
+      >Github</a
+    >
+  </p>
+  <p>
+    You can view this project
+    <a
+      href="{{ project.link }}"
+      target="_blank"
+      >Here</a
+    >
+  </p>
 
-  <hr>
+  <hr />
 
   <div class="d-flex flex-wrap">
     <div

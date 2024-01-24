@@ -8,10 +8,9 @@ export class ProjectsService {
   projects: ProjectInfo[] = [
     {
       id: 1,
-      tech: 'angular',
-      'full-info':
-        'main search form on the main page, header with the search form on the search result page, main search results page, search results page, pagination, metadata update, api calls, card component with search result data (text / links / images ), routing, loading component, no result component, error component, viewing the site with 320 pixels resolution (mobile version),',
-      title: 'Youtybe App',
+      tech: 'Angular Application: YouTube video search app using Google API.',
+      info: 'YouTube video search application. User can sort search results by date, views, can also filter results by video title, add cards to favourites, create your own cards, view full information about the video. To use the application, the user must be logged in.',
+      title: 'YouTube client app',
       image: [
         'assets/youtube/y-1.png',
         'assets/youtube/y-2.png',
@@ -24,24 +23,22 @@ export class ProjectsService {
       github: 'https://github.com/Kornull/Youtube-App',
       stack: [Tag.ANGULAR, Tag.RXJS, Tag.NGRX, Tag.SCSS],
       'full-stack': [
-        'NextJs',
-        'Typescript',
-        'Routing',
-        'React Hooks',
-        'React Icons',
+        'Angular 16',
+        'RxJS',
+        'NgRx',
+        'Jest',
         'REST API',
-        'Tailwind.css',
-        'EsLint',
-        'Google Developers API',
-        'eXTReMe-IP-LOOKUP API',
-        'Random word API',
+        'Typescript',
+        'ES Lint',
+        'Prettier',
+        'SCSS',
+        'Angular Material',
       ],
     },
     {
       id: 0,
-      tech: 'amgular',
-      'full-info':
-        'registration, authorization, profile, localization(i18next), reusable form component, menu burger,header project styling(material Ui), application and backend deployment.',
+      tech: 'Angular Application: Connections project with real backend.',
+      info: 'Application represents the platform to allow users to communicate via public text messages. Before starting to use the service a guest must register and sign in. Authorized user can see vertically divided main page, where left side is a list of public group and right side is a list of people including personal conversations. Each user can create own public group and broadcast messages there or use existing group along with other participants. Personal information can be viewed on a special profile page, where it can be immediately edited.',
       title: 'RS-Network',
       image: [
         'assets/network/net-1.png',
@@ -55,22 +52,25 @@ export class ProjectsService {
       github: 'https://github.com/Kornull/rs-network',
       stack: [Tag.ANGULAR, Tag.RXJS, Tag.NGRX, Tag.SCSS],
       'full-stack': [
-        'React',
+        'Angular 17',
+        'RxJS',
+        'NgRx',
         'Typescript',
-        'Redux Toolkit',
-        'RTK Query',
-        'React Hooks',
-        'React Router',
-        'Localization(i18next)',
-        'SCSS.modules',
-        'MAterial UI',
+        'ES Lint',
+        'Prettier',
+        'SCSS',
+        'Angular Material',
       ],
+      warn: 'Please use a fake email!',
     },
     {
       id: 2,
-      tech: 'javascript',
-      'full-info':
-        'processing of keystrokes on the keyboard, interaction between the keyboard and mouse, language changes, localStorage, webpack. All HTML generation takes place in the application script, the HTML file is empty.      ',
+      tech: 'The generation of DOM elements is implemented. body in the index.html is empty',
+      info: `The virtual keyboard is able to switch between two language layouts (En + Ru language).Processing of keystrokes on the keyboard, interaction between the keyboard and mouse. All HTML generation takes place in the application script, the HTML file is empty.
+      The buttons on the virtual keyboard display symbols of a selected language.
+      The application saves a chosen language after the page is reloaded and displays the keyboard on that language.
+       Clicks on the buttons with a mouse on the virtual keyboard and pressing keys on a physical keyboard should input symbols to the text area located on the page above the virtual keyboard.
+      The keyboard shortcut for changing language indicated on the page  it clear for a user how to switch keyboard layout.`,
       title: 'Virtual keyboard',
       image: [
         'assets/keyboard/k-1.png',
@@ -85,8 +85,13 @@ export class ProjectsService {
     },
     {
       id: 3,
-      tech: 'typescript',
-      'full-info': 'react',
+      tech: 'Online store of laptops created on Typescrypt without HTML',
+      info: `Online store created on Typescript 
+      User can sort product cards by Search bar, multiple sorting options: Name, Year, Color, Stock, Quantity, Popular. 
+      You can also add items to cart and remove them from it.
+      Reset search parameters, reset local store settings, all data will be saved in local store.
+      Minimum resolution of the application is 768 pixels.
+      All HTML generation is done in application script, HTML file is empty.`,
       title: 'Online store',
       image: [
         'assets/shop/st-1.png',
@@ -99,6 +104,8 @@ export class ProjectsService {
       stack: [Tag.TYPESCRIPT, Tag.WEBPACK, Tag.SCSS],
       'full-stack': [
         'Typescript',
+        'ES Lint',
+        'Prettier',
         'Webpack',
         'SCSS',
         'LocalStorage',
@@ -107,9 +114,10 @@ export class ProjectsService {
     },
     {
       id: 4,
-      tech: 'javascript',
-      'full-info':
-        'burger menu, custom slider, popup with additional information about the card, pagination, mobile version, tracking positions and screen size.',
+      tech: 'JavaScript project: Website of a pet shelter (Landing page)',
+      info: `Animal shelter website is a landing page made using technologies such as JavaScript, HTML, CSS, Webpack.
+      This project implements: burger menu, custom sliders, popup with additional information about the card, pagination, mobile version, 
+      tracking positions and screen size.`,
       title: 'Shelter',
       image: [
         'assets/pet/p-1.png',
@@ -124,9 +132,11 @@ export class ProjectsService {
     },
     {
       id: 5,
-      tech: 'typescript',
+      tech: 'SPA (single page application). It is written in Typescript without using any frameworks.',
       title: 'Async Race(game)',
-      'full-info': 'react',
+      info: `SPA on Typescript. User can switch between two pages - Garage and Winners table.
+      In the race it is possible to race all cars simultaneously or each one in turn.
+      User can create a custom car or create 100 random cars at once in one click.`,
       image: [
         'assets/race/r-1.png',
         'assets/race/r-2.png',
@@ -140,14 +150,21 @@ export class ProjectsService {
       link: 'https://kornull-async-race.netlify.app/',
       github: 'https://github.com/Kornull/RS-School-Stage-1-2/tree/asynk-race',
       stack: [Tag.TYPESCRIPT, Tag.SCSS, Tag.WEBPACK],
-      'full-stack': ['JavaScript', 'HTML', 'CSS'],
+      'full-stack': [
+        'Typescript',
+        'ES Lint',
+        'REST API',
+        'Webpack',
+        'SCSS',
+        'JS Animation',
+      ],
     },
   ];
 
   defaultData: ProjectInfo = {
     id: 0,
     tech: 'none',
-    'full-info': '',
+    info: '',
     title: 'Something were wrong',
     image: ['src/assets/imageProjects/shelter.webp'],
     link: '',
