@@ -148,7 +148,7 @@ export class ProjectsService {
         'assets/race/r-8.png',
       ],
       link: 'https://kornull-async-race.netlify.app/',
-      github: 'https://github.com/Kornull/RS-School-Stage-1-2/tree/asynk-race',
+      github: 'https://github.com/Kornull/Async-race-game-',
       stack: [Tag.TYPESCRIPT, Tag.SCSS, Tag.WEBPACK],
       'full-stack': [
         'Typescript',
