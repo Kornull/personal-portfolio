@@ -12,6 +12,8 @@
     "description": "Description",
     "technology": "Technologies",
     "filter": "Filter",
+    "lang": "Languages:",
+    "framework": "Frameworks:",
     "stack": "Stack",
     "visit": "Visit the portfolio section to learn more",
     "more": "View more",
