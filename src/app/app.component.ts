@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'personal-portfolio';
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('ru');
   }
 }

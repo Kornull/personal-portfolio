@@ -10,7 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
-import { NavigateComponent } from './navigate/navigate.component';
+import { NavigateComponent } from './components/navigate/navigate.component';
 
 function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
