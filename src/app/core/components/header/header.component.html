@@ -7,9 +7,14 @@
     </h3>
   </div>
 
-  <div class="contacts">
+  <div class="contacts d-flex">
+    <button
+      class="btn btn-outline-primary d-flex justify-content-center align-items-center rounded-circle me-2"
+      (click)="changeLanguage()">
+      {{ btnTitle }}
+    </button>
     <a
-      href="https://drive.google.com/file/d/1DxELV86N_UcdJIgYL9jKojyLEvRD5Lb4/view?usp=sharing"
+      [href]="'resume' | translate"
       target="_blank">
       <img
         src="assets/logo/cv.png"

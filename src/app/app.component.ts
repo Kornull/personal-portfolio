@@ -1,15 +1,18 @@
-import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, OnInit } from '@angular/core';
+
+import { LocalizeService } from './core/services/localize.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'personal-portfolio';
 
-  constructor(private translate: TranslateService) {
-    translate.setDefaultLang('ru');
+  constructor(private langService: LocalizeService) {}
+
+  ngOnInit(): void {
+    this.langService.initialLang();
   }
 }
