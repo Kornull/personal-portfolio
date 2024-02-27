@@ -18,10 +18,14 @@
     </div>
   </carousel>
 
-  <h3 class="mt-2">Description</h3>
-  <p>{{ project.info }}</p>
-  <h5 *ngIf="project.warn" class="fw-bold text-danger">{{ project.warn }}</h5>
-  <h5 class="mt-2">Stack:</h5>
+  <h3 class="mt-2">{{ 'general.description' | translate }}</h3>
+  <p>{{ project.info | translate }}</p>
+  <h5
+    *ngIf="project.warn"
+    class="fw-bold text-danger">
+    {{ project.warn | translate }}
+  </h5>
+  <h5 class="mt-2">{{ 'general.stack' | translate }}</h5>
   <ul>
     <li
       class=""
@@ -30,7 +34,7 @@
     </li>
   </ul>
   <p>
-    You can find this project on
+    {{ 'general.links.github' | translate }}
     <a
       href="{{ project.github }}"
       target="_blank"
@@ -38,11 +42,11 @@
     >
   </p>
   <p>
-    You can view this project
+    {{ 'general.links.deploy' | translate }}
     <a
       href="{{ project.link }}"
       target="_blank"
-      >Here</a
+      >{{ 'general.links.here' | translate }}</a
     >
   </p>
 

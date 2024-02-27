@@ -2,28 +2,22 @@
   <div class="row gx-5">
     <div
       class="col shadow border d-flex flex-column align-items-center m-1 mb-2">
-      <h2 class="text-center mb-2">About me</h2>
+      <h2 class="text-center mb-2">{{ 'about.me' | translate }}</h2>
       <img
         src="assets/foto.png"
         alt="avatar"
         width="186"
         height="186"
-        class="rounded-circle" 
-        style="object-fit: cover;"/>
+        class="rounded-circle"
+        style="object-fit: cover" />
       <p class="text-start mt-2">
-        Hello, my name is Uladzimir and I am a frontend developer. I graduated
-        from the best web development school The Rolling Scopes School. It was
-        not an easy way, but I managed it and I can say that it was great. I was
-        a team leader of 3 people during the final assignment of the JavaScript
-        course. During the course I developed many pet projects ranging from
-        pure HTML, CSS and JavaScript landing pages to SPA applications using
-        Angular, RxJS, NgRx, Typescript. I am looking for a company that will
-        allow me to work with an exciting product and reach my full potential. I
-        have over a year and a half of experience in web application development
-        (games, landing pages, SPA). A good knowledge of JavaScript basics
-        allows me to quickly learn new technologies and add value to the team.
+        {{ 'about.p1' | translate }}
+        <br />
+        {{ 'about.p2' | translate }}
+        <br />
+        {{ 'about.p3' | translate }}
       </p>
-      <h4>Technologies</h4>
+      <h4>{{ 'general.technology' | translate }}</h4>
       <p>
         Angular, RxJS, NgRx, Typescript, JavaScript, Redux, ES Lint, Angular
         Material, Jest, HTML, CSS, SCSS, Git, GitHub, npm, yarn
@@ -31,7 +25,7 @@
     </div>
 
     <div class="col shadow border m-1 mb-2">
-      <h2 class="text-center">Featured project</h2>
+      <h2 class="text-center">{{ 'general.project' | translate }}</h2>
       <h3 class="text-center">{{ project.title }}</h3>
       <carousel>
         <div *ngFor="let img of project.image">
@@ -45,9 +39,9 @@
       </carousel>
 
       <p class="mt-2">
-        {{ project.tech }}
+        {{ project.tech | translate }}
       </p>
-      <p class="mt-2">Visit the portfolio section to learn more</p>
+      <p class="mt-2">{{ 'general.visit' | translate }}</p>
     </div>
   </div>
 </div>

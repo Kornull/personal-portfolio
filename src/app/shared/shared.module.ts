@@ -6,6 +6,9 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 
+import { HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
+
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ProjectModalComponent } from './components/project-modal/project-modal.component';
 
@@ -16,8 +19,16 @@ import { ProjectModalComponent } from './components/project-modal/project-modal.
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
+    HttpClientModule,
     FormsModule,
+    TranslateModule,
   ],
-  exports: [ProjectCardComponent, CarouselModule, FormsModule, CollapseModule],
+  exports: [
+    ProjectCardComponent,
+    CarouselModule,
+    FormsModule,
+    CollapseModule,
+    TranslateModule,
+  ],
 })
 export class SharedModule {}

@@ -1,11 +1,10 @@
 <div class="container">
   <div class="text-center border mb-5 shadow rounded">
-    <h1>Contancs</h1>
-    <p>I can be reached at the following email&#58;
+    <h1>{{ 'general.contacts' | translate }}</h1>
+    <p>{{ 'general.contacts-info.mail' | translate }}&#58;
       <a href="mailto:u.karnialiuk@gmail.com" class="text-decoration-none text-dark hover-text fw-bold">u&#46;karnialiuk@gmail&#46;com</a>
-    
     </p>
-    <p>Feel free to connect with me on any of the following platforms&#58;</p>
+    <p>{{ 'general.contacts-info.another' | translate }}&#58;</p>
   </div>
 
   <div class="list-group shadow">
@@ -23,9 +22,13 @@
         <img src="assets/logo/github.png" alt="" width="36" height="36" class="rounded-circle flex-shrink-0 me-5" >
         <h3 class="mb-0">GitHub</h3>
      </a>
-     <a href="https://drive.google.com/file/d/1DxELV86N_UcdJIgYL9jKojyLEvRD5Lb4/view?usp=sharing" target="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3">
+     <a [href]="'resume' | translate" target="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3">
         <img src="assets/logo/cv.png" alt="" width="36" height="36" class="rounded-circle flex-shrink-0 me-5" >
         <h3 class="mb-0">Resume</h3>
      </a>
+     <!-- <a href="https://drive.google.com/file/d/1DxELV86N_UcdJIgYL9jKojyLEvRD5Lb4/view?usp=sharing" target="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3">
+        <img src="assets/logo/cv.png" alt="" width="36" height="36" class="rounded-circle flex-shrink-0 me-5" >
+        <h3 class="mb-0">Resume</h3>
+     </a> -->
   </div>
 </div>

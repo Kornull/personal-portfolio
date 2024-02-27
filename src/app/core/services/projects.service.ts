@@ -8,8 +8,8 @@ export class ProjectsService {
   projects: ProjectInfo[] = [
     {
       id: 1,
-      tech: 'Angular Application: YouTube video search app using Google API.',
-      info: 'YouTube video search application. User can sort search results by date, views, can also filter results by video title, add cards to favourites, create your own cards, view full information about the video. To use the application, the user must be logged in.',
+      tech: 'projects.youtube.tech',
+      info: 'projects.youtube.info',
       title: 'YouTube client app',
       image: [
         'assets/youtube/y-1.png',
@@ -37,8 +37,8 @@ export class ProjectsService {
     },
     {
       id: 0,
-      tech: 'Angular Application: Connections project with real backend.',
-      info: 'Application represents the platform to allow users to communicate via public text messages. Before starting to use the service a guest must register and sign in. Authorized user can see vertically divided main page, where left side is a list of public group and right side is a list of people including personal conversations. Each user can create own public group and broadcast messages there or use existing group along with other participants. Personal information can be viewed on a special profile page, where it can be immediately edited.',
+      tech: 'projects.rs-network.tech',
+      info: 'projects.rs-network.info',
       title: 'RS-Network',
       image: [
         'assets/network/net-1.png',
@@ -61,16 +61,12 @@ export class ProjectsService {
         'SCSS',
         'Angular Material',
       ],
-      warn: 'Please use a fake email!',
+      warn: 'projects.rs-network.warn',
     },
     {
       id: 2,
-      tech: 'The generation of DOM elements is implemented. body in the index.html is empty',
-      info: `The virtual keyboard is able to switch between two language layouts (En + Ru language).Processing of keystrokes on the keyboard, interaction between the keyboard and mouse. All HTML generation takes place in the application script, the HTML file is empty.
-      The buttons on the virtual keyboard display symbols of a selected language.
-      The application saves a chosen language after the page is reloaded and displays the keyboard on that language.
-       Clicks on the buttons with a mouse on the virtual keyboard and pressing keys on a physical keyboard should input symbols to the text area located on the page above the virtual keyboard.
-      The keyboard shortcut for changing language indicated on the page  it clear for a user how to switch keyboard layout.`,
+      tech: 'projects.keyboard.tech',
+      info: 'projects.keyboard.info',
       title: 'Virtual keyboard',
       image: [
         'assets/keyboard/k-1.png',
@@ -85,13 +81,8 @@ export class ProjectsService {
     },
     {
       id: 3,
-      tech: 'Online store of laptops created on Typescrypt without HTML',
-      info: `Online store created on Typescript 
-      User can sort product cards by Search bar, multiple sorting options: Name, Year, Color, Stock, Quantity, Popular. 
-      You can also add items to cart and remove them from it.
-      Reset search parameters, reset local store settings, all data will be saved in local store.
-      Minimum resolution of the application is 768 pixels.
-      All HTML generation is done in application script, HTML file is empty.`,
+      tech: 'projects.online-store.tech',
+      info: 'projects.online-store.info',
       title: 'Online store',
       image: [
         'assets/shop/st-1.png',
@@ -114,10 +105,8 @@ export class ProjectsService {
     },
     {
       id: 4,
-      tech: 'JavaScript project: Website of a pet shelter (Landing page)',
-      info: `Animal shelter website is a landing page made using technologies such as JavaScript, HTML, CSS, Webpack.
-      This project implements: burger menu, custom sliders, popup with additional information about the card, pagination, mobile version, 
-      tracking positions and screen size.`,
+      tech: 'projects.online-store.tech',
+      info: 'projects.online-store.info',
       title: 'Shelter',
       image: [
         'assets/pet/p-1.png',
@@ -132,11 +121,9 @@ export class ProjectsService {
     },
     {
       id: 5,
-      tech: 'SPA (single page application). It is written in Typescript without using any frameworks.',
+      tech: 'projects.race.tech',
+      info: 'projects.race.info',
       title: 'Async Race(game)',
-      info: `SPA on Typescript. User can switch between two pages - Garage and Winners table.
-      In the race it is possible to race all cars simultaneously or each one in turn.
-      User can create a custom car or create 100 random cars at once in one click.`,
       image: [
         'assets/race/r-1.png',
         'assets/race/r-2.png',

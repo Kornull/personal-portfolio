@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { CarouselConfig } from 'ngx-bootstrap/carousel';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { ProjectInfo } from 'src/app/core/models';
@@ -17,7 +18,10 @@ import { ProjectInfo } from 'src/app/core/models';
 export class ProjectModalComponent {
   project!: ProjectInfo;
 
-  constructor(private bsModalRef: BsModalRef) {}
+  constructor(
+    private bsModalRef: BsModalRef,
+    public translate: TranslateService
+  ) {}
 
   closeModal() {
     this.bsModalRef.hide();

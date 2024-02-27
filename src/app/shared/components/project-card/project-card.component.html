@@ -1,13 +1,17 @@
-<div class="card shadow text-center default-style" style="width: 100%; max-width: 480px;">
+<div
+  class="card shadow text-center default-style"
+  style="width: 100%; max-width: 480px">
   <div class="card-body">
     <h5 class="card-title">{{ projectData.title }}</h5>
-    <p class="card-text text-muted" style="min-height: 48px;">
-      {{ projectData.tech }}
+    <p
+      class="card-text text-muted"
+      style="min-height: 48px">
+      {{ projectData.tech | translate }}
     </p>
     <button
       class="btn btn-danger"
       (click)="openProjectModal()">
-      View more
+      {{ 'general.more' | translate }}
     </button>
   </div>
   <div class="card-footer">

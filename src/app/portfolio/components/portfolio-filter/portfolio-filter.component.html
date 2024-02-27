@@ -3,14 +3,14 @@
     <button
       class="btn btn-outline-danger mb-2 me-2"
       (click)="isViewFilter = !isViewFilter">
-      Filter
+      {{ 'general.filter' | translate }}
     </button>
 
     <button
       class="btn btn-outline-secondary mb-2 me-2"
       (click)="resetFilter()"
       [hidden]="isFiltering">
-      Reset
+      {{ 'general.reset' | translate }}
     </button>
 
     <div
@@ -22,7 +22,9 @@
         <form>
           <div class="row mx-0">
             <div class="col">
-              <small><b>Language:</b></small>
+              <small
+                ><b>{{ 'general.lang' | translate }}</b></small
+              >
               <div class="form-group">
                 <div class="form-check">
                   <input
@@ -55,7 +57,9 @@
               </div>
             </div>
             <div class="col">
-              <small><b>Framework:</b></small>
+              <small
+                ><b>{{ 'general.framework' | translate }}</b></small
+              >
               <div class="form-group">
                 <div class="form-check">
                   <input
