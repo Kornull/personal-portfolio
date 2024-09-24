@@ -105,8 +105,8 @@ export class ProjectsService {
     },
     {
       id: 4,
-      tech: 'projects.online-store.tech',
-      info: 'projects.online-store.info',
+      tech: 'projects.shelter.tech',
+      info: 'projects.shelter.info',
       title: 'Shelter',
       image: [
         'assets/pet/p-1.png',
