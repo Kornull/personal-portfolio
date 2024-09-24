@@ -8,4 +8,4 @@
 - ESLint
 - Prettier
 
-#### [Link](https://uladzimir-k-frontend-portfolio.netlify.app/home)
+#### [Link](https://personal-kornull-portfolio.vercel.app/home)
